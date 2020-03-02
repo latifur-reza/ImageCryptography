@@ -1,0 +1,9 @@
+C:\Users\Reza\Desktop\Appframe\Appframe\bin\Debug\Appframe.exe.config
+C:\Users\Reza\Desktop\Appframe\Appframe\bin\Debug\Appframe.exe
+C:\Users\Reza\Desktop\Appframe\Appframe\bin\Debug\Appframe.pdb
+C:\Users\Reza\Desktop\Appframe\Appframe\obj\Debug\Appframe.csprojAssemblyReference.cache
+C:\Users\Reza\Desktop\Appframe\Appframe\obj\Debug\Appframe.Form1.resources
+C:\Users\Reza\Desktop\Appframe\Appframe\obj\Debug\Appframe.Properties.Resources.resources
+C:\Users\Reza\Desktop\Appframe\Appframe\obj\Debug\Appframe.csproj.GenerateResource.cache
+C:\Users\Reza\Desktop\Appframe\Appframe\obj\Debug\Appframe.exe
+C:\Users\Reza\Desktop\Appframe\Appframe\obj\Debug\Appframe.pdb
