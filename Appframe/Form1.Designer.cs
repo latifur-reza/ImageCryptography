@@ -35,6 +35,8 @@
             this.textBoxFilePath = new System.Windows.Forms.TextBox();
             this.textBoxMessage = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.openTxtFile = new System.Windows.Forms.Button();
+            this.textFileLocation = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             // 
             // buttonEncode
             // 
-            this.buttonEncode.Location = new System.Drawing.Point(218, 332);
+            this.buttonEncode.Location = new System.Drawing.Point(218, 379);
             this.buttonEncode.Name = "buttonEncode";
             this.buttonEncode.Size = new System.Drawing.Size(75, 23);
             this.buttonEncode.TabIndex = 2;
@@ -68,7 +70,7 @@
             // 
             // buttonDecode
             // 
-            this.buttonDecode.Location = new System.Drawing.Point(421, 332);
+            this.buttonDecode.Location = new System.Drawing.Point(421, 379);
             this.buttonDecode.Name = "buttonDecode";
             this.buttonDecode.Size = new System.Drawing.Size(75, 23);
             this.buttonDecode.TabIndex = 3;
@@ -85,7 +87,7 @@
             // 
             // textBoxMessage
             // 
-            this.textBoxMessage.Location = new System.Drawing.Point(299, 306);
+            this.textBoxMessage.Location = new System.Drawing.Point(299, 343);
             this.textBoxMessage.Name = "textBoxMessage";
             this.textBoxMessage.Size = new System.Drawing.Size(197, 20);
             this.textBoxMessage.TabIndex = 5;
@@ -93,17 +95,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(215, 309);
+            this.label1.Location = new System.Drawing.Point(243, 346);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Enter Message";
+            this.label1.Text = "Message";
+            // 
+            // openTxtFile
+            // 
+            this.openTxtFile.Location = new System.Drawing.Point(218, 303);
+            this.openTxtFile.Name = "openTxtFile";
+            this.openTxtFile.Size = new System.Drawing.Size(75, 23);
+            this.openTxtFile.TabIndex = 7;
+            this.openTxtFile.Text = "Open txt File";
+            this.openTxtFile.UseVisualStyleBackColor = true;
+            this.openTxtFile.Click += new System.EventHandler(this.openTxtFile_Click);
+            // 
+            // textFileLocation
+            // 
+            this.textFileLocation.Location = new System.Drawing.Point(299, 306);
+            this.textFileLocation.Name = "textFileLocation";
+            this.textFileLocation.Size = new System.Drawing.Size(197, 20);
+            this.textFileLocation.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textFileLocation);
+            this.Controls.Add(this.openTxtFile);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxMessage);
             this.Controls.Add(this.textBoxFilePath);
@@ -128,6 +149,8 @@
         private System.Windows.Forms.TextBox textBoxFilePath;
         private System.Windows.Forms.TextBox textBoxMessage;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button openTxtFile;
+        private System.Windows.Forms.TextBox textFileLocation;
     }
 }
 

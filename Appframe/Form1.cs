@@ -96,5 +96,18 @@ namespace Appframe
             textBoxMessage.Text = message;
 
         }
+
+        private void openTxtFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Filter = "Text|*.txt|All|*.*";
+            openDialog.InitialDirectory = @"Desktop";
+
+            if (openDialog.ShowDialog() == DialogResult.OK)
+            {
+                textFileLocation.Text = openDialog.FileName.ToString();
+                textBoxMessage.Text = System.IO.File.ReadAllText(textFileLocation.Text, Encoding.UTF8);
+            }
+        }
     }
 }
