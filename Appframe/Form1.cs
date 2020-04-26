@@ -27,6 +27,7 @@ namespace Appframe
             {
                 textBoxFilePath.Text = openDialog.FileName.ToString();
                 pictureBox.ImageLocation = textBoxFilePath.Text;
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
 
@@ -71,7 +72,7 @@ namespace Appframe
 
         private void buttonDecode_Click(object sender, EventArgs e)
         {
-            Bitmap img = new Bitmap(textBoxFilePath.Text);
+            Bitmap img = new Bitmap(textBoxCarrierFile.Text);
             string message = "";
 
             Color lastPixel = img.GetPixel(img.Width - 1, img.Height - 1);
@@ -93,7 +94,16 @@ namespace Appframe
                 }
             }
 
-            textBoxMessage.Text = message;
+            textBoxDecodedMessage.Text = message;
+
+            SaveFileDialog saveFile = new SaveFileDialog();
+            saveFile.Filter = "Text|*.txt|All|*.*";
+            saveFile.InitialDirectory = @"Desktop";
+            if (saveFile.ShowDialog() == DialogResult.OK)
+            {
+                textBoxSaveFileTo.Text = saveFile.FileName.ToString();
+                System.IO.File.WriteAllText(textBoxSaveFileTo.Text, message);
+            }
 
         }
 
@@ -108,6 +118,30 @@ namespace Appframe
                 textFileLocation.Text = openDialog.FileName.ToString();
                 textBoxMessage.Text = System.IO.File.ReadAllText(textFileLocation.Text, Encoding.UTF8);
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void carrierFileBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Filter = "Image Files(*.png, *.jpg) | *.png; *.jpg";
+            openDialog.InitialDirectory = @"Desktop";
+
+            if (openDialog.ShowDialog() == DialogResult.OK)
+            {
+                textBoxCarrierFile.Text = openDialog.FileName.ToString();
+                pictureBox.ImageLocation = textBoxCarrierFile.Text;
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+
+        private void saveFileToBtn_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

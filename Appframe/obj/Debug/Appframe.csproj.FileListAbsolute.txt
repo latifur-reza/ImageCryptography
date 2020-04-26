@@ -16,3 +16,12 @@ C:\Users\Reza\Desktop\NN\ImageCryptography\Appframe\obj\Debug\Appframe.Propertie
 C:\Users\Reza\Desktop\NN\ImageCryptography\Appframe\obj\Debug\Appframe.csproj.GenerateResource.cache
 C:\Users\Reza\Desktop\NN\ImageCryptography\Appframe\obj\Debug\Appframe.exe
 C:\Users\Reza\Desktop\NN\ImageCryptography\Appframe\obj\Debug\Appframe.pdb
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\bin\Debug\Appframe.exe.config
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\bin\Debug\Appframe.exe
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\bin\Debug\Appframe.pdb
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\obj\Debug\Appframe.csprojAssemblyReference.cache
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\obj\Debug\Appframe.Form1.resources
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\obj\Debug\Appframe.Properties.Resources.resources
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\obj\Debug\Appframe.csproj.GenerateResource.cache
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\obj\Debug\Appframe.exe
+C:\Users\Reza\Desktop\Afa\ImageCryptography\Appframe\obj\Debug\Appframe.pdb
